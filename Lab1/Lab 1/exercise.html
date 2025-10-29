@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Comment Form</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 40px;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        form {
+            background-color: #f0f0f0; /* soft grey background */
+            padding: 20px;
+            border: 1px solid #ccc;
+            width: 400px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 250px;
+            padding: 5px;
+            border: 1px solid #999;
+            border-radius: 3px;
+        }
+
+        input[type="range"] {
+            width: 250px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border: 1px solid #777;
+            background-color: #e6e6e6;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Send Us Your Comments</h1>
+    <p>Required fields are marked with an asterisk <strong>*</strong>.</p>
+
+    <form action="mailto:you@yourdomain.com" method="post" enctype="text/plain">
+        <p>
+            <label for="name">Name*:</label>
+            <input type="text" id="name" name="name" placeholder="your first and last name" required>
+        </p>
+        <p>
+            <label for="email">E-mail*:</label>
+            <input type="email" id="email" name="email" placeholder="you@yourdomain.com" required>
+        </p>
+        <p>
+            <label for="rating">Rating (1 - 10):</label>
+            <input type="range" id="rating" name="rating" min="1" max="10">
+        </p>
+        <p>
+            <label for="comments">Comments*:</label><br>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+
+
+<h1>Send Us Your Comments</h1>
+    <p>Required fields are marked with an asterisk <b>*</b>.</p>
+
+    <table bgcolor="#f0f0f0" cellpadding="10" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <form action="mailto:you@yourdomain.com" method="post" enctype="text/plain">
+                    <table>
+                        <tr>
+                            <td><b>Name*:</b></td>
+                            <td><input type="text" name="name" size="30" placeholder="your first and last name" required></td>
+                        </tr>
+                        <tr>
+                            <td><b>E-mail*:</b></td>
+                            <td><input type="email" name="email" size="30" placeholder="you@yourdomain.com" required></td>
+                        </tr>
+                        <tr>
+                            <td><b>Rating (1 - 10):</b></td>
+                            <td><input type="range" name="rating" min="1" max="10"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><b>Comments*:</b></td>
+                            <td><textarea name="comments" rows="4" cols="32" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
