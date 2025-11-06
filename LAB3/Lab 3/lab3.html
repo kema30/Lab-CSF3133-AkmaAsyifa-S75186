@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - Exercise</title>
+</head>
+    <body>
+        
+        <!-- Header Section -->
+        <header id="header" style="background-color:Thistle; text-align:center">
+            <h1><p style="color:MediumVioletRed; font-size:larger">BeauteaTime</p></h1>
+            <span style="color:BlueViolet">Spill the tea, share your glow!</span>
+        </header>
+
+        <!-- Navigation Bar -->
+        <div id="nav" style="background-color:HotPink; text-align:center">
+            <p>
+                <a href="#">Home | </a>
+                <a href="#">Products | </a>
+                <a href="#">Beauty Tips | </a>
+                <a href="#">Contact</a>
+            </p>
+        </div>
+
+        <!-- Content Section -->
+        <div id="content" style="background-color:MistyRose; padding:20px;">
+            <h2>Welcome to BeauteaTime</h2>
+            <p> BeauteaTime is your cozy corner for all things beauty and wellness.
+                Whether you're sipping your favorite tea or exploring new skincare routines,
+                we believe self-care should always be sweet and simple.
+            </p>
+
+            <h3>Contact us</h3>
+            <form action="">
+                Email: <input type="email" name="usermail" required>
+                <br><br>
+                Preffered Contact Date: <input type="date" name="date" required>
+                <br><br>
+                Satisfaction Level: <input type="range" min="0" max="10">
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <!-- Inline Calculator Section -->
+            <h3>Beauty Cost calculator</h3>
+            <form oninput="result.value=parseInt(price1.value)+parseInt(price2.value)">
+                Skincare (RM): <input id="price1" type="number" value="0">
+                <br><br>
+                Makeup (RM): <input id="price2" type="number" value="0">
+                <br><br>
+                Total Cost (RM): <output name="result" for="price1 price2"></output>
+            </form>
+
+            <p> Tip: Use this calculator to estimate your total beauty budget!</p>
+        </div>
+
+        <!-- Footer Section -->
+        <div id="footer" style="background-color:HotPink">
+            <p>
+                Contact us at: <a href="info@beauteatime.com">info@beauteatime.com</a><br>
+                &copy; 2025 Akma's Beauty Blog.
+            </p>
+        </div>
+
+    </body>
+</html>
+
+            
