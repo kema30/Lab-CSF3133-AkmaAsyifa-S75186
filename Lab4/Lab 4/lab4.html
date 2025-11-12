@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lab Exercise 4</title>
+   
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f5;
+      color: #4e342e;
+    }
+
+    /* Header */
+    header {
+      background-color: #ffb6c1;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    header h1 {
+      margin: 0;
+      text-decoration: underline;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-style: italic;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #ff69b4;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      background-color: #ff69b4;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff1493;
+    }
+
+    /* Main Content */
+    main {
+      padding: 20px;
+    }
+
+    section, article {
+      background-color: #fff;
+      width: 80%;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #ffe4e1;
+    }
+
+    h2 {
+      color: #d81b60;
+      text-align: center;
+    }
+
+    /* Video */
+    video {
+      display: block;
+      margin: 10px auto;
+    }
+
+    .caption {
+      text-align: center;
+      font-style: italic;
+      color: gray;
+    }
+
+    /* Form */
+    form {
+      background-color: #ffe4e1;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, button {
+      margin-top: 5px;
+      padding: 6px;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    /* Responsive (simple) */
+    @media screen and (max-width:600px) {
+      section, article {
+        width: 95%;
+      }
+      video {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+    <body>
+    <!-- Header -->
+    <header>
+        <h1>🍰Sweet Moments🍰</h1>
+        <p>Bake with love and share happiness 💗ྀི</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- == MAIN CONTENT == -->
+    <main>
+        <!-- Home Section -->
+         <article id="home">
+            <h2>Welcome to Sweet Moments</h2>
+            <p>At <strong>Sweet Moments</strong>, we believe baking is more than just food. It's about love, joy and creativity.</p>
+         </article>
+
+        <!-- Recipes Section -->
+          <section id="recipes">
+            <h3>Featured Recipe: Chocolate Chip Cookies ‧₊˚ 🍪 ⋅ ☆</h3>
+            <p>soft, chewy and filled with melty chocolate - these cookies are a classic you'll want to bake again and again!</p>
+            <ul>
+                <li>1 cup butter, softened</li>
+                <li>1 cup brown sugar</li>
+                <li>2 cups flour</li>
+                <li>1 tsp vanilla extract</li>
+                <li>Chocolate chips (as many as your heart desires!)</li>
+            </ul>
+            <p><em>Tip:</em> Bake at 180&deg;C for 10-12 minutes and enjoy with a warm cup of milk!</p>
+          </section>
+
+        <!-- Video Section -->
+         <section id="video">
+            <h3>Watch How It's Made!</h3>
+            <video width="600" height="300" controls>
+                <source src="C:\Users\akmaa\Downloads\Soft and Chewy Chocolate Chip Cookies Recipe.mp4" type="video/mp4">
+            </video>
+                <p>Video: Step-by-step guide to baking perfect chocolate chip cookies 🍪</p>
+         </section>
+
+        <!-- Contact Section -->
+         <section id="contact">
+            <h2>Join Our Baking Community</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <label>Favorite Desserts:</label><br>
+                <input type="checkbox" id="'cookies" name="dessert" value="Cookies">
+                <label for="cookies">Cookies</label>
+                <input type="checkbox" id="brownies" name="dessert" value="Brownies">
+                <label for="brownies">Brownies</label>
+                <input type="checkbox" id="cupcakes" name="dessert" value="Cupcakes">
+                <label for="cupcakes">Cupcakes</label><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+         </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sweet Moments | Designed with 💖 by Akma Asyifa</p>
+    </footer>
+
+    </body>
+</html>
