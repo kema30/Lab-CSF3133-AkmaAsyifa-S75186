@@ -1,0 +1,228 @@
+/*
+h1 {
+    color: purple;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Navigation bar background 
+ul { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    background-color: #f59ef5; 
+}
+
+/* Items horizontal 
+li { 
+    float: left; 
+}
+
+/* Link style 
+li a { 
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+    font-weight: 600;
+}
+
+/* Hover effect 
+li a:hover { 
+    background-color: #e78f9d;
+    transition: 0.3s;
+} */
+            
+
+/* Global styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfdadf;
+}
+
+/* Header */
+header {
+    background-color: white;
+    color: rgb(110, 12, 91);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ca93bd;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #da9bb1;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #423f43;
+}
+
+th {
+    background-color: #75328d;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #ca95b6;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+            
+
+
+
+/* GLOBAL STYLES         
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f0f8ff;
+    line-height: 1.6;
+}
+
+ HEADER 
+header {
+    background: #005f73;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/* NAVIGATION BAR 
+nav {
+    background: #0a9396;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #94d2bd;
+    color: #003845;
+}
+
+/* CONTENT SECTION 
+section {
+    padding: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2, h3 {
+    color: #005f73;
+}
+
+p.external {
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* TABLE 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #94d2bd;
+}
+
+th {
+    background: #0a9396;
+    color: white;
+    padding: 12px;
+    font-weight: 700;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background: #e9f5f3;
+}
+
+tr:hover {
+    background: #cdeee6;
+    transition: 0.2s;
+}
+
+/* FOOTER 
+footer {
+    background: #005f73;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+} */
