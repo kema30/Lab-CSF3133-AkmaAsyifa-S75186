@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Application</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>JavaScript Quiz</h1>
+        <p>Test your knowledge!</p>
+    </header>
+
+    <main>
+
+        <!-- Timer Display -->
+        <div id="timer">
+            Time Left: <span id="time">10</span>s
+        </div>
+
+        <!-- Question and Options Area -->
+        <section id="question-container">
+            <!-- Question Text -->
+            <h2 id="question-text"></h2>
+
+            <!-- Options will be added here by JavaScript -->
+            <div id="options"></div>
+        </section>
+
+        <!-- Feedback after answering (Correct / Incorrect) -->
+        <section id="feedback"></section>
+
+        <!-- Button to move to next question -->
+        <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+
+        <!-- Final score shown after finishing quiz -->
+        <footer id="score-section" style="display:none;">
+            <h2>Your Score:</h2>
+            <p id="score"></p>
+
+            <!-- Restart button -->
+            <button onclick="startQuiz()">Restart Quiz</button>
+        </footer>
+    </main>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
