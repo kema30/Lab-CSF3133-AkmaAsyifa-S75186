@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap CSS Forms</title>
+</head>
+<body>
+
+    <!-- Basic Form -->
+     <h3>Basic Form</h3>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail"
+            placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- Form Layout -->
+    <h3>Horizontal Form</h3>
+    <form>
+        <div class="row mb-3">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- Inline Form -->
+    <h3>Inline Form</h3>
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+
+    <!-- Form Controls -->
+    <h3>Form Controls</h3>
+    <div class="mb-3">
+        <label for="exampleTextarea" class="form-label">Example Textarea</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+
+    <!-- Select Menus -->
+    <h3>Select Menus</h3>
+    <div class="mb-3">
+        <label for="exampleSelect" class="form-label">Select Example</label>
+        <select class="form-select" id="exampleSelect">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+        </select>
+    </div>
+
+    <!-- Form Validations -->
+    <h3>Form Validations</h3>
+    <form>
+        <div class="mb-3">
+            <label for="validationExample" class="form-label">Username</label>
+            <input type="text" class="form-control is-invalid" id="validationExample" 
+            value="Correct Input">
+            <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="mb-3">
+            <label for="validationExampleInvalid" class="form-label">Password</label>
+            <input type="password" class="form-control is-invalid" id="validationExampleInvalid">
+            <div class="invalid-feedback">Please choose a stronger password.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- Checkboxes and Radios -->
+    <h3>Checkboxes</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="exampleCheck">
+        <input class="form-check-label" for="exampleCheck">Check me out</label>
+    </div>
+
+    <h3>Radio Buttons</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="radio1"
+        value="option1" checked>
+        <input class="form-check-label" for="exampleRadio1">Option 1</label>
+        <label class="form-check-label" for="radio1">Option 1</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="radio2"
+        value="option2">
+        <label class="form-check-label" for="radio2">Option 2</label>
+    </div>
+    
+    <!-- Input Groups -->
+    <h3>Input Groups</h3>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username"
+        aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <!-- Floating Labels -->
+    <h3>Floating Labels</h3>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput"
+        placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+    </div>
+
+    <!-- Disabled and Readonly Inputs -->
+     <h3>disabled</h3>
+    <input type="text" class="form-control" placeholder="Disabled input" disabled>
+
+    <h3>Readonly</h3>
+    <input type="text" class="form-control" placeholder="Readonly input" readonly>
+</body>
+</html>
